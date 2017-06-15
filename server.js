@@ -24,6 +24,12 @@ app.get('/about', (req, res) => {
 	})
 });
 
+app.get('/projects',(req,res) =>{
+	res.render('project.hbs',{
+		heading: 'projects'
+	});
+});
+
 app.get('/bad', (req, res) =>{
 	res.send('<h1 style="color:red;">error</h1>')
 });
